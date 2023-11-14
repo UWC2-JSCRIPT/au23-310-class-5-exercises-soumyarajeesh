@@ -10,8 +10,10 @@ lastParagraph.insertAdjacentElement("afterend", buyNowLink);
 // log to the console
 
 const image = document.querySelector("img");
+if (image) {
 const dataColorAttribute = image.getAttribute("data-color");
 console.log(dataColorAttribute);
+}
 // Update the third <li> item ("Turbocharged"), 
 // set the class name to "highlight"
 const thirdListItem = document.querySelectorAll("li")[2]; // Select the third <li> (index 2)
