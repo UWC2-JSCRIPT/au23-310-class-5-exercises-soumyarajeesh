@@ -5,6 +5,26 @@
   </head>
 
   <body>
-    <!-- Your HTML here -->
+    <button id="plusButton">+</button>
+    <button id="minusButton">-</button>
+    <p id="countDisplay">Count: 0</p>
+
+    <script>
+        const plusButton = document.getElementById('plusButton');
+        const minusButton = document.getElementById('minusButton');
+        const countDisplay = document.getElementById('countDisplay');
+
+        let count = 0;
+
+        plusButton.addEventListener('click', function () {
+            count++;
+            countDisplay.textContent = 'Count: ' + count;
+        });
+
+        minusButton.addEventListener('click', function () {
+            count--;
+            countDisplay.textContent = 'Count: ' + count;
+        });
+    </script>
   </body>
 </html>
